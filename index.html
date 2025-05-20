@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widdig dress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .search-container {
+            width: 300px;
+        }
+
+        .carousel{
+            height: 100vh;
+        }
+         .carousel-inner{
+            width: 70%;
+            /* height: 100vh; */
+            margin-top: 40px;
+          background-size: cover;
+         margin: auto;
+         }
+
+        .carousel-inner img {
+            width: 100%;
+            max-height: 500px;
+            background-position: center;
+        }
+
+        .card {
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .card-img-wrapper {
+            /* position: relative; ده مش ضروري دلوقتي */
+            overflow: hidden;
+        }
+        .title{
+            text-align: center;
+        }
+        .title h1{
+            color: brown;
+            font-size: 30px;
+
+        }
+        .line{
+            width: 100px;
+            height: 3px;
+            margin: auto;
+            background-color: gray;
+        }
+        .line:hover{
+            width: 500px;
+            cursor: 2;
+            transition: 1s;
+            background-color: brown;
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Take full width of the card */
+            height: 100%; /* Take full height of the card */
+            background-color: rgba(53, 38, 38, 0.363); /* Semi-transparent color */
+            color: rgb(112, 17, 17);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .card:hover .card-img-overlay { /* Apply hover effect to the card */
+            opacity: 1;
+        }
+
+        .overlay-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .overlay-details {
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 20px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./DR/logo2.png" alt="Logo" width="100px" height="100px"> </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <form class="d-flex search-container">
+                            <input class=" inpSearch" type="search" placeholder=" searsh">
+                            <button class="btn btn-outline-danger" type="submit">searsh</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <ul class="navbar-nav">
+                    <li class="d-flex">
+                        <a class="nav-link" href="#"><i style="color: rgb(109, 31, 31);" class="bi bi-house-door-fill fs-5"></i></a>
+                        <a class="nav-link" href="#"><i style="color: rgb(109, 31, 31);" class="bi bi-bell-fill fs-5"></i></a>
+                        <a class="nav-link" href="#"><i style="color: rgb(109, 31, 31);" class="bi bi-envelope-fill fs-5"></i></a>
+                        <a class="nav-link" href="#"><i style="color: rgb(109, 31, 31);" class="bi bi-person-circle fs-5"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- =====================================end header============================ -->
+
+    <div id="randomImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./DR/1.jpg" class="d-block w-100" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./DR/2.jpg" class="d-block w-100" alt="Carousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./DR/3.jpg" class="d-block w-100" alt="Carousel Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="./DR/4.jpg" class="d-block w-100" alt="Carousel Image 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#randomImageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#randomImageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+ <!-- ====================================group-1======================================= -->
+    <div class="title"> 
+        <h1 class="animate__animated animate__bounce animate__zoomInDown">.BEST DRESSES.</h1>
+        <div class="line"></div>
+    </div>
+ <main>
+  <div style="justify-content: space-around;" class="container parent-1 d-flex">
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w1.jpg" class="card-img-top" alt="Elegant midi wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">Midi Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b> SOPHIE ROMANTIC</p>
+                    <p class="overlay-details"><b>PRICE:</b> <b class="price-current">1000$</b> (BEFORE<sup class="price-discounted">1200$</sup>)</p>
+                    <a price="10000" name="Midi Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: brown; text-align: center;">Midi Wedding</h5>
+                    </div>
+                </div>
+            <!-- ====================================card2======================================= -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w2.jpg" class="card-img-top" alt="Elegant wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">Elegent Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b> BERRY DRESSES</p>
+                    <p class="overlay-details"><b>price:</b> <b class="price-current">8800$</b> (BEFORE <sup class="price-discounted">9000$</sup>)</p>
+                     <a price="8800" name="elegent Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: brown; text-align: center;">elegent Wedding</h5>
+                <span class="limited-period" style="color: gray;">"for a limited period"</span></p>
+                   </div>
+            </div>
+            <!-- ====================================card3======================================= -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w3.jpg" class="card-img-top" alt="Lace wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">lace Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b>SCALL DRESSES</p>
+                    <p class="overlay-details"><b>price:</b> <b class="price-current">9800$</b> (BEFORE <sup class="price-discounted">10000$</sup>)</p>
+                     <a price="8800" name="lace Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: brown; text-align: center;">lace Wedding</h5>
+                    
+                </div>
+            </div>
+        </div>
+            <!-- ====================================group2======================================= -->
+        <div style="justify-content: space-around;" class="container parent-1 d-flex">
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w4.jpg" class="card-img-top" alt="White wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">White Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b> ANEVETA DRESSES</p>
+                    <p class="overlay-details"><b>price:</b> <b class="price-current">5800$</b> (BEFORE <sup class="price-discounted">6000$</sup>)</p>
+                     <a price="8800" name="white Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: brown; text-align: center;">white Wedding</h5>
+                   <span class="limited-period" style="color: gray;">"for a limited period"</span>
+                    
+                </div>
+            </div>
+
+        <!-- ====================================card2======================================= -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w5.jpg" class="card-img-top" alt="Classy wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">Classy Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b> ATOMM DRESSES</p>
+                    <p class="overlay-details"><b>price:</b> <b class="price-current">4800$</b> (BEFORE <sup class="price-discounted">5000$</sup>)</p>
+                    <a price="8800" name="classy Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: brown; text-align: center;">Classy Wedding</h5>
+                 </div>
+            </div>
+            <!-- ====================================card3======================================= -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-img-wrapper">
+                    <img src="./DR/w6.jpg" class="card-img-top" alt="Glam wedding dress" height="400px">
+                </div>
+                <div class="card-img-overlay">
+                    <h3 class="overlay-title">Glam Wedding</h3>
+                    <p class="overlay-details"><b>DESIGNER:</b> ARCTIC DRESSES</p>
+                    <p class="overlay-details"><b>price:</b> <b class="price-current">2800$</b> (BEFORE<sup class="price-discounted">3000$</sup>)</p>
+                    <a price="8800" name="Glam Wedding" style="width: 80px; position: relative;" href="#content" class="btn btn-outline-danger rounded-3">Buy</a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text card-text-description" style="color: brown; text-align: center;"><b>Glam Wedding</b></p>
+                    <span class="limited-period" style="color: gray;">"for a limited period"</span>
+              </div>
+            </div>
+        </div>
+<hr>
+        <div id="product" style="width: fit; display: none; margin:40px 0 0 43%; font-weight: 900;">SELECTED PRODUCTS</div>
+        <div id="content" style="text-align: center; color: blue; font-size: 19px; font-weight: 600;">
+            <p id="notFound" style="display: none; color: red;">notFound</p>
+        </div>
+        <button id="btn2" style="display: none; width: 150px; margin-left: 45% ">show price</button>
+        <div class="total" style="height: 20px; margin-left: 49% ;"></div>
+        <button id="del" style="display: none; width: 150px; margin-left: 45%">delete</button>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+       
+        // document.querySelector(".title")
+    </script>
+    <script src="./java script/main.js"></script>
+</body>
+</html>
